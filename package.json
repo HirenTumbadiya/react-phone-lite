@@ -1,0 +1,49 @@
+{
+  "name": "react-phone-lite",
+  "version": "1.0.0",
+  "keywords": [
+    "react-phone-lite",
+    "react",
+    "phone",
+    "input",
+    "international",
+    "format",
+    "number",
+    "tel",
+    "telephone",
+    "react-component",
+    "phone-input",
+    "react-phone",
+    "react-international-phone"
+  ],
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "author": "Hiren Tumbadiya <tumbadiyahiren@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.8.0",
+  "devDependencies": {
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^6.1.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "prettier": "^3.6.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

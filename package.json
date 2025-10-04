@@ -21,17 +21,32 @@
   ],
   "private": false,
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "vite build",
+    "build": "tsc -p tsconfig.json --emitDeclarationOnly && vite build",
     "dev": "vite",
     "lint": "eslint src --ext .ts,.tsx"
   },
   "author": "Hiren Tumbadiya <tumbadiyahiren@gmail.com>",
   "license": "MIT",
   "packageManager": "pnpm@10.8.0",
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=18 <20 || ^19",
+    "react-dom": ">=18 <20 || ^19"
+  },
   "devDependencies": {
+    "@types/react": "^18.3.25",
+    "@types/react-dom": "^18.3.1",
+    "country-flag-icons": "^1.5.21",
     "eslint": "^9.36.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
@@ -41,7 +56,9 @@
     "prettier": "^3.6.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "typescript": "^5.9.3"
+    "sass": "^1.80.6",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.11"
   },
   "publishConfig": {
     "access": "public"
